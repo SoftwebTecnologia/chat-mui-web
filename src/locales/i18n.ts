@@ -12,6 +12,7 @@ import translationFr from './langs/fr.json';
 import translationVi from './langs/vi.json';
 import translationCn from './langs/cn.json';
 import translationAr from './langs/ar.json';
+import translationBr from './langs/br.json';
 
 // ----------------------------------------------------------------------
 
@@ -27,6 +28,7 @@ i18n
       vi: { translations: translationVi },
       cn: { translations: translationCn },
       ar: { translations: translationAr },
+      br: { translations: translationBr },
     },
     lng,
     fallbackLng: 'en',

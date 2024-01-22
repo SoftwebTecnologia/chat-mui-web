@@ -1,11 +1,12 @@
-import { HomeView } from 'src/sections/home/view';
+'use client'
+
+import { useRouter } from 'next/navigation';
+
 
 // ----------------------------------------------------------------------
 
-export const metadata = {
-  title: 'Minimal: The starting point for your next project',
-};
-
 export default function HomePage() {
-  return <HomeView />;
+  const router = useRouter()
+
+  return router.push('auth/jwt/login/?returnTo=%2Fdashboard%2F');
 }

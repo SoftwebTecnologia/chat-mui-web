@@ -8,6 +8,7 @@ import {
   enUS as enUSAdapter,
   zhCN as zhCNAdapter,
   arSA as arSAAdapter,
+  ptBR as ptBRAdapter,
 } from 'date-fns/locale';
 
 // date pickers (MUI)
@@ -24,6 +25,7 @@ import {
   viVN as viVNCore,
   zhCN as zhCNCore,
   arSA as arSACore,
+  ptBR as ptBRCore
 } from '@mui/material/locale';
 // data grid (MUI)
 import {
@@ -32,6 +34,7 @@ import {
   viVN as viVNDataGrid,
   zhCN as zhCNDataGrid,
   arSD as arSDDataGrid,
+  ptBR as ptBRDataGrid
 } from '@mui/x-data-grid';
 
 // PLEASE REMOVE `LOCAL STORAGE` WHEN YOU CHANGE SETTINGS.
@@ -91,6 +94,17 @@ export const allLangs = [
     numberFormat: {
       code: 'ar',
       currency: 'AED',
+    },
+  },
+  {
+    label: 'Portuguese',
+    value: 'br',
+    systemValue: merge(ptBRDataGrid, ptBRCore),
+    adapterLocale: ptBRAdapter,
+    icon: 'flagpack:br',
+    numberFormat: {
+      code: 'br',
+      currency: 'BRL',
     },
   },
 ];
